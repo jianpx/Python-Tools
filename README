@@ -1,2 +1,36 @@
-* desc: some tools scripts written with python, these may help your daily life or work.
 * TODO:
+* desc: some tools scripts written with python, these may help your daily life or work.
+* requirement: python2.5 or later. you can download it on http://download.huihoo.com/python/20080929-85.html or other resources^_^
+
+* tools list:
+	1 translate.py:
+		*Usage:(you can run python translate.py to see this Usage info, too)
+				python translate.py <word>
+		*3rd library: BeautifulSoup
+
+	2 GeekMusic.py(2010-12-29 added, temporarily tested only on Linux):
+		*Usage:(you can run python GeekMusic.py to see this Usage info, too)
+				python GeekMusic.py [options]
+				Options Syntax:
+					-s
+					--song
+						name of song
+					-a
+					--album
+						id of album
+					-u
+					--url
+						url of song
+		*Samples:
+		 1)按照歌曲名称搜索:
+		 	python GeekMusic.py -s 五月天
+
+		 2)按照专辑id(这个id是指google音乐地址栏上面的album?id=xxxxxx的那个id)搜索:
+		   Tips: 你可以在网页上搜索到专辑的id再运行下面的命令:
+		 	python GeekMusic.py -a B578f49d38e35425c
+
+		 3)终极武器：按照url搜索，你可以把在网页上搜到歌曲的那个地址放进来.
+		 	python GeekMusic.py -u http://www.google.cn/music/search?q=angel
+
+		然后你只要将搜索到的结果的链接放到下载软件上面批量下载就行了，我用迅雷挺快的^_^
+		备注：由于Google有做下载限制，可能用得频繁的时候会收到输入验证码，然后此脚本就不work了，I'm sorry about this.too! :(
